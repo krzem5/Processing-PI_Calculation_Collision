@@ -1,1 +1,3 @@
-start "" "projects/Processing-PI_Calculation_Collision/index/index.pde"
+@echo off
+cls
+python build.py %*
