@@ -1,6 +1,6 @@
 final int TARGET_PI_VALUE=314159265;
 final int DIGIT_COUNT=9;
-final float TIME_STEP_COUNT=pow(10,DIGIT_COUNT-1);
+final int TIME_STEP_COUNT=(int)pow(10,DIGIT_COUNT-1);
 
 
 
@@ -13,7 +13,7 @@ int count=0;
 void setup(){
 	size(800,600,P2D);
 	b1=new Block(1,0,1,1,0);
-	b2=new Block(2,(float)-1/TIME_STEP_COUNT,pow(100,DIGIT_COUNT-1),1,1);
+	b2=new Block(2,-1.0f/TIME_STEP_COUNT,pow(100,DIGIT_COUNT-1),1,1);
 }
 
 
